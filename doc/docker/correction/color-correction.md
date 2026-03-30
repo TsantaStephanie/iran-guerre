@@ -1,1 +1,0 @@
-je veux pouvoir ajuster les couleurs dans mon projet suivant, 
