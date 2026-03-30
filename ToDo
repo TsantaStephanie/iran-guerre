@@ -14,14 +14,14 @@
     - Données par défaut : Créer un "Seeder" pour insérer l'utilisateur admin par défaut et quelques articles de test sur la guerre en Iran.
 
 
-3. Développement du Backoffice 
+3. Développement du Backoffice [Tsanta]
     - Interface de gestion : Créer les pages pour Lister, Ajouter, Modifier les articles.
 
     - Upload : Ajouter la possibilité d'uploader une image pour chaque article.
 
     - Validation : S'assurer que le champ image_alt est obligatoire lors de l'ajout (pour ne jamais oublier le SEO).
 
-4. Développement du FrontOffice & SEO 
+4. Développement du FrontOffice & SEO [Mitia]
     - Design Responsive : Créer un layout propre qui s'adapte aux mobiles (critère Lighthouse).
 
     - Affichage : Créer la page d'accueil (liste des articles) et la page "Détail" de l'article.
@@ -36,7 +36,7 @@
 
     - URL Rewriting : Configurer les routes pour avoir des URLs propres (ex: /actualites/conflit-iran-2026).
 
-5. Finalisation & Livraison 
+5. Finalisation & Livraison [Tsanta] [Mitia]
     - Test Lighthouse : Lancer l'outil dans Chrome (F12 > Lighthouse) en local sur Mobile et Desktop. Viser un score vert (>90).
 
     - Document Technique :
