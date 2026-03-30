@@ -25,8 +25,4 @@ class DatabaseSeeder extends Seeder
         // [OK] Seed articles et catégories
         $this->call(ArticleSeeder::class);
     }
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-    }
 }
