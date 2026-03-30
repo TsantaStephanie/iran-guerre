@@ -9,9 +9,11 @@
 
 
 2. Base de données & Contenu [Mitia]
+    - creation script 
+    
     - Migration : Créer une table articles avec les colonnes : titre, slug (pour l'URL rewriting), contenu, image, image_alt (SEO), et meta_description.
 
-    - Données par défaut : Créer un "Seeder" pour insérer l'utilisateur admin par défaut et quelques articles de test sur la guerre en Iran.
+    - Données par défaut : Créer un "Seeder" pour insérer l'utilisateur admin par défaut et quelques articles de test sur la guerre en Iran. 
 
 
 3. Développement du Backoffice [Tsanta]
@@ -26,13 +28,12 @@
 
     - Affichage : Créer la page d'accueil (liste des articles) et la page "Détail" de l'article.
 
-    - Optimisation SEO (selon ton cours) :
+    - Optimisation SEO (selon le cours) :
+        - Vérifier qu'il n'y a qu'un seul <h1> par page.
 
-    - Vérifier qu'il n'y a qu'un seul <h1> par page.
+        - Générer les balises <title> et <meta description> dynamiquement avec les données de la base.
 
-    - Générer les balises <title> et <meta description> dynamiquement avec les données de la base.
-
-    - Vérifier que les images ont bien leur attribut alt.
+        - Vérifier que les images ont bien leur attribut alt.
 
     - URL Rewriting : Configurer les routes pour avoir des URLs propres (ex: /actualites/conflit-iran-2026).
 

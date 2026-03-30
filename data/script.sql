@@ -1,5 +1,5 @@
-CREATE DATABASE iranwar;
-\c iranwar
+CREATE DATABASE iran_war;
+\c iran_war
 
 -- Création des tables
 CREATE TABLE users (
@@ -36,5 +36,5 @@ CREATE TABLE articles (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
-    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
+    FOREIGN KEY (category_id) REFERENCES categories(id) 
 );
