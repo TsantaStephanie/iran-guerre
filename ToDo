@@ -1,0 +1,50 @@
+1. Configuration & Environnement [Tsanta]
+    - Initialiser le projet : Créer un nouveau projet Laravel avec PostgreSQL.
+
+    - Docker : Utiliser Laravel Sail pour générer le fichier docker-compose.yml. Vérifier que les conteneurs (app et db) se lancent bien.
+
+    - Sécurité (Backoffice) : Installer Laravel Breeze pour avoir le système de Login (User/Pass) prêt immédiatement.
+
+    - Git : Créer le repo public (GitHub/GitLab) et faire le premier "Push".
+
+
+2. Base de données & Contenu [Mitia]
+    - Migration : Créer une table articles avec les colonnes : titre, slug (pour l'URL rewriting), contenu, image, image_alt (SEO), et meta_description.
+
+    - Données par défaut : Créer un "Seeder" pour insérer l'utilisateur admin par défaut et quelques articles de test sur la guerre en Iran.
+
+
+3. Développement du Backoffice 
+    - Interface de gestion : Créer les pages pour Lister, Ajouter, Modifier les articles.
+
+    - Upload : Ajouter la possibilité d'uploader une image pour chaque article.
+
+    - Validation : S'assurer que le champ image_alt est obligatoire lors de l'ajout (pour ne jamais oublier le SEO).
+
+4. Développement du FrontOffice & SEO 
+    - Design Responsive : Créer un layout propre qui s'adapte aux mobiles (critère Lighthouse).
+
+    - Affichage : Créer la page d'accueil (liste des articles) et la page "Détail" de l'article.
+
+    - Optimisation SEO (selon ton cours) :
+
+    - Vérifier qu'il n'y a qu'un seul <h1> par page.
+
+    - Générer les balises <title> et <meta description> dynamiquement avec les données de la base.
+
+    - Vérifier que les images ont bien leur attribut alt.
+
+    - URL Rewriting : Configurer les routes pour avoir des URLs propres (ex: /actualites/conflit-iran-2026).
+
+5. Finalisation & Livraison 
+    - Test Lighthouse : Lancer l'outil dans Chrome (F12 > Lighthouse) en local sur Mobile et Desktop. Viser un score vert (>90).
+
+    - Document Technique :
+
+    - Faire des captures d'écran du Front (FO) et du Back (BO).
+
+    - Schématiser la table de la base de données.
+
+    - Noter les identifiants de test pour le prof.
+
+    - Nettoyage : Supprimer les fichiers inutiles et zipper le projet (sans oublier le docker-compose.yml).
