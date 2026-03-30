@@ -26,9 +26,9 @@
         <!-- [OK] Meta informations -->
         <div class="flex flex-wrap gap-6 text-sm text-gray-400 mb-8 pb-8 border-b border-gray-700">
             <time datetime="{{ $article->created_at->format('Y-m-d') }}">
-                📅 {{ $article->created_at->format('d M Y') }}
+               _{{ $article->created_at->format('d M Y') }}
             </time>
-            @if ($article->updated_at->ne($article->created_at))
+            @if ($article->updated_at && $article->updated_at->ne($article->created_at))
                 <span>Mis à jour: {{ $article->updated_at->format('d M Y') }}</span>
             @endif
         </div>

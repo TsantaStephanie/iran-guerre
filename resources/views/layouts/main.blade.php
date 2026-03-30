@@ -28,6 +28,10 @@
 
                 <!-- Menu principal (desktop) -->
                 <div class="hidden md:flex items-center gap-6">
+                    <a href="{{ route('home') }}" 
+                       class="text-gray-300 hover:text-red-600 transition font-semibold">
+                        Accueil
+                    </a>
                     @foreach ($categories ?? [] as $category)
                         <a href="{{ route('articles.category', $category->slug) }}" 
                            class="text-gray-300 hover:text-red-600 transition font-semibold">
@@ -62,6 +66,10 @@
         <!-- Menu mobile (déroulant) -->
         <div x-show="open" @click.away="open = false" class="md:hidden bg-black border-t border-gray-800">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="{{ route('home') }}" 
+                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">
+                    Accueil
+                </a>
                 @foreach ($categories ?? [] as $category)
                     <a href="{{ route('articles.category', $category->slug) }}" 
                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">
